@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android1="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             tools:context=".QuizActivity"
+    android1:layout_width="match_parent"
+    android1:layout_height="match_parent">
+
+    <TextView
+        android1:id="@+id/question_text_view"
+        android1:padding="24dp"
+        android1:layout_gravity="center_horizontal"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        tools:text="question text shows here."/>
+
+    <LinearLayout
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_gravity="center_vertical|center_horizontal"
+        android1:orientation="horizontal">
+
+        <Button
+            android1:id="@+id/true_button"
+            android1:text="@string/true_button"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content" />
+
+        <Button
+            android1:id="@+id/false_button"
+            android1:text="@string/false_button"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <Button
+        android1:id="@+id/cheat_button"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_gravity="center|bottom"
+        android1:text="@string/cheat_button"/>
+
+    <FrameLayout
+        android1:layout_width="match_parent"
+        android1:layout_height="wrap_content"
+        android1:layout_gravity="bottom">
+
+        <ImageButton
+            android1:id="@+id/pre_button"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:layout_gravity="left"
+            android1:src="@drawable/arrow_left"
+            android1:contentDescription="@string/pre_button"/>
+
+        <ImageButton
+            android1:id="@+id/next_button"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:layout_gravity="right"
+            android1:src="@drawable/arrow_right"
+            android1:contentDescription="@string/next_button"/>
+
+        <!--<Button-->
+            <!--android1:id="@+id/pre_button"-->
+            <!--android1:text="@string/pre_button"-->
+            <!--android1:layout_width="wrap_content"-->
+            <!--android1:layout_height="wrap_content"-->
+            <!--android1:drawableLeft="@drawable/arrow_left"-->
+            <!--android1:drawablePadding="4dp"/>-->
+
+        <!--<Button-->
+            <!--android1:id="@+id/next_button"-->
+            <!--android1:text="@string/next_button"-->
+            <!--android1:layout_width="wrap_content"-->
+            <!--android1:layout_height="wrap_content"-->
+            <!--android1:drawableRight="@drawable/arrow_right"-->
+            <!--android1:drawablePadding="4dp"/>-->
+    </FrameLayout>
+</FrameLayout>
+
